@@ -1,0 +1,173 @@
+/* 这是所有网页的基础模板css，包括logo、主导航栏、搜索框等 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  position: fixed;
+  left: 2.4vw;
+  top: 1.67vh;
+  width: 12vw;
+  height: auto;
+}
+.nav {
+  position: fixed;
+  top: 13.98vh;
+  left: 0;
+  width: 17.34vw;
+  height: 86.02vh;
+  border: 1px solid #24c7be;
+}
+.nav-item {
+  background-color: #ffffff;
+  border: 0;
+  padding: 0 6%;
+  height: 13.9vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-item svg {
+  padding-right: 3%;
+}
+.nav-item.selected {
+  color: #16c7a2;
+  background-color: #b4ffe3;
+}
+.search {
+  position: fixed;
+  left: 30.4vw;
+  top: 2.5vh;
+}
+.search-select {
+  outline: none;
+  align-content: center;
+  width: 8vw;
+  height: 6.02vh;
+  border: 1px solid #bbbbbb;
+  border-radius: 50px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.search-input {
+  outline: none;
+  width: 26.04vw;
+  height: 5.8vh;
+  border: 1px solid #bbbbbb;
+  border-radius: 50px;
+}
+.search-icon {
+  position: relative;
+  top: 0.4vh;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.qr-code {
+  position: fixed;
+  left: 82vw;
+  top: 3vh;
+  color: #32d7da;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 这些是副导航栏的样式 */
+.smallnav {
+  position: fixed;
+  left: 20.4vw;
+  height: 8vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0;
+}
+.smallitem {
+  padding: 0 1.4vw;
+  height: auto;
+  width: 4vw;
+  white-space: nowrap;
+}
+
+/* 这些是过滤器 */
+#all {
+  width: 6vw;
+}
+#distance {
+  width: 6vw;
+}
+#score {
+  width: 6vw;
+}
+#filter_in {
+  width: 6vw;
+}
+
+/* 弹窗遮罩 */
+#mask {
+    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+#filter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10vw;
+    height: 20vh;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-content: center;
+    align-items: center;
+}
+.filter_post{
+    align-content: center;
+    opacity: 0.7;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10vh;
+    width: 4vw;
+}
+.fis{
+    position: relative;
+    left:2vw;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    width: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.getback{
+    position: relative;
+    left:6vw;
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* 内容显示部分 */
+.content-holder{
+    width:72vw;
+    height:65vh;
+    position: absolute;
+    left:19.1vw;
+    top:25.65vh;
+    overflow-y: auto;
+}
